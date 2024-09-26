@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stroke Diagnosis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo ao AI Stroke</h1>
+            <p>Este sistema foi desenvolvido para auxiliar no diagnóstico depredição de infartos. Preencha os campos abaixo com os dados do paciente e clique em "Diagnosticar".</p>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <input type="text" id="newInput" placeholder="Nome" required>
+        <input type="text" id="newAge" placeholder="Idade" required>
+        <input type="text" id="newGlucose" placeholder="Glicose" required>
+        <input type="text" id="newBmi" placeholder="IMC" required>
+        <label for="newHt">Histórico de hipertensão?</label>
+        <select id="newHt">
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+        <label for="newHd">Histórico de doença coronária?:</label>
+        <select id="newHd">
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+
+        <button class="btn" onclick="newItem()">Diagnosticar</button>
+    </section>
+
+    <section class="table-section">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>HT</th>
+                    <th>HD</th>
+                    <th>Glicose</th>
+                    <th>IMC</th>
+                    <th>Diagnóstico</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
